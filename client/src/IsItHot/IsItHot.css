@@ -1,3 +1,11 @@
 .hot-wrapper {
   text-align: center;
 }
+
+.title {
+  font-size: 80px;
+}
+
+.answer {
+  font-size: 40px;
+}
