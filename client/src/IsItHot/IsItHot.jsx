@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import Conditional from './Conditional';
-// import Response from './Response';
+import Response from './Response';
 import SearchIcon from '@mui/icons-material/Search';
 import "./IsItHot.css"
 import axios from "axios"
@@ -60,7 +60,9 @@ export default function IsItHot(props) {
           </>
           : null}
         {isSubmitted ?
-          <p className="temp">{ weatherName } is { weatherTemp }℉ </p>
+          <Response 
+          weatherTemp={weatherTemp}
+          weatherName={weatherName}/>
         : null }
       </div>
     </div>
