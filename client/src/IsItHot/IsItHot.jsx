@@ -60,9 +60,7 @@ export default function IsItHot(props) {
           </>
           : null}
         {isSubmitted ?
-          <Response 
-          weatherTemp={weatherTemp}
-          weatherName={weatherName}/>
+          <p className="temp">{ weatherName } is { weatherTemp }℉ </p>
         : null }
       </div>
     </div>
