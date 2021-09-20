@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Conditional from './Conditional';
 import Response from './Response';
+import SearchIcon from '@mui/icons-material/Search';
 import "./IsItHot.css"
 import axios from "axios"
 
@@ -9,7 +10,7 @@ export default function IsItHot(props) {
 
   const OPENWEATHER_KEY = process.env.REACT_APP_API_KEY;
   
-  const [disable, setDisable] = useState(false)
+  // const [disable, setDisable] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [inputValue, setInputValue] = useState("")
   const [weatherTemp, setWeatherTemp] = useState([]);
@@ -43,19 +44,23 @@ export default function IsItHot(props) {
   return (
     <div className="hot-wrapper">
       <h1 className="title">IS IT HOT?</h1>
-      <form onSubmit={handleSubmit}>
-        <input onChange={handleChange}
-          placeholder="Enter Location..."
-          type="text"/>
-        <button >Enter</button>
+      <form className="search-container" onSubmit={handleSubmit}>
+        <input className="search-input" onChange={handleChange}
+          placeholder="Enter City or State..."
+          type="text">
+        </input>
+        <button className="enter-button"> <SearchIcon className="search-icon" /> </button>
       </form>
       <div className="response-content">
         {isSubmitted ?
-          <Conditional className="answer"
-            weatherTemp={weatherTemp}/>
+          <>
+          
+          <Conditional
+            weatherTemp={weatherTemp} />
+          </>
           : null}
         {isSubmitted ?
-          <Response
+          <Response 
           weatherTemp={weatherTemp}
           weatherName={weatherName}/>
         : null }

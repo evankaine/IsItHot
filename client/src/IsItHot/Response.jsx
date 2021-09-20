@@ -6,7 +6,7 @@ export default function Response(props) {
 
   return (
     <div>
-      <p>{ weatherName } is { weatherTemp }℉ </p>
+      <p className="temp">{ weatherName } is { weatherTemp }℉ </p>
     </div>
   )
 }
