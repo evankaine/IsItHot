@@ -15,47 +15,47 @@ https://api.openweathermap.org/data/2.5/weather?q=new%20york&units=imperial&appi
 
 ```json
 {
-coord: {
-lon: -74.006,
-lat: 40.7143
-},
-weather: [
-{
-id: 803,
-main: "Clouds",
-description: "broken clouds",
-icon: "04d"
-}
-],
-base: "stations",
-main: {
-temp: 75.16,
-feels_like: 74.88,
-temp_min: 72.07,
-temp_max: 77.29,
-pressure: 1027,
-humidity: 53
-},
-visibility: 10000,
-wind: {
-speed: 9.22,
-deg: 140
-},
-clouds: {
-all: 75
-},
-dt: 1632165595,
-sys: {
-type: 1,
-id: 4610,
-country: "US",
-sunrise: 1632134508,
-sunset: 1632178621
-},
-timezone: -14400,
-id: 5128581,
-name: "New York",
-cod: 200
+  coord: {
+    lon: -74.006,
+    lat: 40.7143
+  },
+  weather: [
+    {
+      id: 803,
+      main: "Clouds",
+      description: "broken clouds",
+      icon: "04d"
+    }
+  ],
+  base: "stations",
+  main: {
+    temp: 75.16,
+    feels_like: 74.88,
+    temp_min: 72.07,
+    temp_max: 77.29,
+    pressure: 1027,
+    humidity: 53
+  },
+  visibility: 10000,
+  wind: {
+    speed: 9.22,
+    deg: 140
+  },
+  clouds: {
+    all: 75
+  },
+  dt: 1632165595,
+  sys: {
+    type: 1,
+    id: 4610,
+    country: "US",
+    sunrise: 1632134508,
+    sunset: 1632178621
+  },
+  timezone: -14400,
+  id: 5128581,
+  name: "New York",
+  cod: 200
 }
 ```
 
