@@ -6,9 +6,11 @@ export default function IsItHotContent(props) {
 
     if (weatherTemp >= 80) {
       return (<h2>yea. it's hot</h2>)
-    } else if (weatherTemp <= 79 && weatherTemp >= 60) {
+    } else if (weatherTemp <= 80 && weatherTemp >= 60) {
       return (<h2>nah. it is warm tho</h2>)
-    } else if (weatherTemp <= 59 && weatherTemp >= -80) {
+    } else if (weatherTemp <= 59) {
       return (<h2>nah. it's cold</h2>)
-    } 
+    } else {
+      return ("idk")
+    }
 }

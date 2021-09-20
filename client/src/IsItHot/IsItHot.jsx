@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import Conditional from './Conditional';
 import Response from './Response';
@@ -36,6 +37,8 @@ export default function IsItHot(props) {
     fetchData()
     setIsSubmitted(true)
   }
+
+  console.log(inputValue)
 
   return (
     <div className="hot-wrapper">
